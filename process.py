@@ -14,7 +14,7 @@ from nnunet.inference.predict import predict_from_folder
 from nnunet.inference.ensemble_predictions import merge
 from batchgenerators.utilities.file_and_folder_operations import *
 
-class POBOTRI():
+class ATLAS22_POBOTRI():
     def __init__(self):
         return
     def process(self):
@@ -107,4 +107,4 @@ class POBOTRI():
 
 if __name__ == "__main__":
     pathlib.Path("/output/images/stroke-lesion-segmentation/").mkdir(parents=True, exist_ok=True)
-    POBOTRI().process()
+    ATLAS22_POBOTRI().process()

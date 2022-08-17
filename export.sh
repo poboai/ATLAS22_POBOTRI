@@ -2,4 +2,4 @@
 
 ./build.sh
 
-docker save pobotri | gzip -c > /data/POBOTRI.tar.gz
+docker save pobotri | gzip -c > /data/ATLAS22_POBOTRI.tar.gz
