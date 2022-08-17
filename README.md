@@ -6,13 +6,13 @@ The source code for the algorithm container, generated with evalutils version 0.
 # Inference  
 You can run the inference code with docker system.  
 please following these instructions:  
-  1. Prepare mri image data (mha or json format) and json data of adc, dwi, and flair mri images according to the folder structure below.  
+  1. Prepare mri image data (mha or nii.gz format) and json data of adc, dwi, and flair mri images according to the folder structure below.  
   *or you can use sample data in test folder  
 ```
 ATLAS22_POBOTRI/test/  
 ├── images  
 │   └── t1-brain-mri  
-│       └── <t1w_filename>.json  
+│       └── <t1w_filename>.nii.gz  
 ```  
   2. Download nnUNet model parameters from [here](https://postechackr-my.sharepoint.com/:f:/g/personal/ych000_postech_ac_kr/EndNDCftgsRDrLGygt8sOkQBgLoW8h3UTej_5M6HuFERlg?e=4qYgjK) and put them in `nnUNet_model` folder.  
   3. Download HD-BET model parameters from [here](https://postechackr-my.sharepoint.com/:f:/g/personal/ych000_postech_ac_kr/Elq1n0enIKxDmg8x94hbjQcB12Gg0GGmhdiJvHsP8d1E0w?e=K7aeUE) and put them in `bet_params` folder.  
