@@ -6,25 +6,19 @@ The source code for the algorithm container, generated with evalutils version 0.
 # Inference  
 You can run the inference code with docker system.  
 please following these instructions:  
-  1. Prepare mri image data (mha format) and json data of adc, dwi, and flair mri images according to the folder structure below.  
+  1. Prepare mri image data (mha or json format) and json data of adc, dwi, and flair mri images according to the folder structure below.  
   *or you can use sample data in test folder  
 ```
-POBOTRI/test/  
+ATLAS22_POBOTRI/test/  
 ├── images  
-│   └── adc-brain-mri  
-│       └── <adc_filename>.mha  
-│   └── dwi-brain-mri  
-│       └── <dwi_filename>.mha  
-│   └── flair-brain-mri  
-│       └── <flair_filename>.mha  
-├── adc-mri-parametrs.json  
-├── dwi-mri-parametrs.json  
-├── flair-mri-parametrs.json  
+│   └── t1-brain-mri  
+│       └── <t1w_filename>.json  
 ```  
-  2. Download models from [here](https://postechackr-my.sharepoint.com/:u:/g/personal/ych000_postech_ac_kr/Eb41Y0SrqSxIoknM10WU7hIB1RcqA7_R1GlTgWiDnU3TKg?e=jyGoog) and put them in `nnUNet_model` folder.  
-  3. Running the test.sh file automatically installs the required package of requirements.txt and allows you to test the code.  
+  2. Download nnUNet model parameters from [here](https://postechackr-my.sharepoint.com/:f:/g/personal/ych000_postech_ac_kr/EndNDCftgsRDrLGygt8sOkQBgLoW8h3UTej_5M6HuFERlg?e=4qYgjK) and put them in `nnUNet_model` folder.  
+  3. Download HD-BET model parameters from [here](https://postechackr-my.sharepoint.com/:f:/g/personal/ych000_postech_ac_kr/Elq1n0enIKxDmg8x94hbjQcB12Gg0GGmhdiJvHsP8d1E0w?e=K7aeUE) and put them in `bet_params` folder.  
+  4. Running the test.sh file automatically installs the required package of requirements.txt and allows you to test the code.  
   `./test.sh`  
-  *this automatically install all the packages for the ISLES22_PAT code.  
+  *this automatically install all the packages for the ATLAS22_POBOTRI code.  
   *you can modify the test.sh file to change the number of gpu to use, memory limitation, shm size, etc.  
 
   
