@@ -6,7 +6,7 @@ The source code for the algorithm container, generated with evalutils version 0.
 # Inference  
 You can run the inference code with docker system.  
 please following these instructions:  
-  1. Prepare mri image data (mha or nii.gz format) and json data of adc, dwi, and flair mri images according to the folder structure below.  
+  1. Prepare mri image data (mha or nii.gz format) and json data of t1w mri images according to the folder structure below.  
   *or you can use sample data in test folder  
 ```
 ATLAS22_POBOTRI/test/  
